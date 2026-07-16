@@ -48,7 +48,7 @@ ${({ flex }) =>
 `}
 `;
 
-const button = ({
+const ButtonComponent = ({
   text,
   isLoading,
   isDisabled,
@@ -79,4 +79,4 @@ const button = ({
   );
 };
 
-export default button;
+export default ButtonComponent;
