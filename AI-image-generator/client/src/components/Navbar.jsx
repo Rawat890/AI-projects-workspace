@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./buttons/button";
+import ButtonComponent from "./buttons/ButtonComponent";
 import { useLocation, useNavigate } from "react-router";
 import { AddRounded, WebRounded } from "@mui/icons-material";
 
@@ -37,14 +37,14 @@ const Navbar = () => {
     <Container>
       GemAI
       {path[1] === "post" ? (
-        <Button
+        <ButtonComponent
           text="Explore Posts"
           leftIcon={<WebRounded style={{ fontSize: "18px" }} />}
           onClick={gottoHome}
           type="secondary"
         />
       ) : (
-        <Button
+        <ButtonComponent
           text="Create new post"
           leftIcon={<AddRounded style={{ fontSize: "18px" }} />}
           onClick={gotoCreatePost}
